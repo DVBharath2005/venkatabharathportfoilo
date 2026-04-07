@@ -1,0 +1,28 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Images/PDFs
+*.png
+*.jpg
+*.pdf
+Resume.pdf
+Photo (1).png
+nexen connecting founders.png
+metadata.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

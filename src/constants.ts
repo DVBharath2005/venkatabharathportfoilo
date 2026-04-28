@@ -1,4 +1,4 @@
-import { Project, Skill, Education, Achievement } from './types';
+import { Project, Skill, Education, Achievement, WorkExperience } from './types';
 
 export const PROJECTS: Project[] = [
   {
@@ -8,7 +8,7 @@ export const PROJECTS: Project[] = [
     techStack: ['React','NodeJs(Express)', 'MongoDB', 'JWT'],
     githubUrl: 'https://github.com/DVBharath2005/nexen.git',
     liveUrl: 'https://nexen-t3cu.onrender.com/',
-    image: 'nexen connecting founders.png'
+    image: 'https://i.ibb.co/gZw8X5Y9/nexen-connecting-founders.png'
   }
 
 ];
@@ -71,6 +71,18 @@ export const ACHIEVEMENTS: Achievement[] = [
     issuer: 'Forage',
     date: 'Feb 2025',
     description: 'Completed a job simulation program focused on cybersecurity analysis, gaining practical experience in identifying and mitigating cyber threats.'
+  }
+];
+
+export const WORK_EXPERIENCE: WorkExperience[] = [
+  {
+    title: 'Data Science Intern',
+    company: 'Zhagaram Technologies',
+    period: 'July 2025 – August 2025',
+    details: [
+      'Performed data cleaning, preprocessing, and feature engineering on large datasets using Python (Pandas, NumPy) and SQL',
+      'Conducted exploratory data analysis (EDA) to identify trends, correlations, and actionable insights'
+    ]
   }
 ];
 

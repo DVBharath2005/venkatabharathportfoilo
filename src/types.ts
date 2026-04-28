@@ -30,6 +30,13 @@ export interface Achievement {
   link?: string;
 }
 
+export interface WorkExperience {
+  title: string;
+  company: string;
+  period: string;
+  details: string[];
+}
+
 export interface ContactFormData {
   name: string;
   email: string;

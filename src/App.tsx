@@ -11,7 +11,6 @@ import {
   Code, 
   Cpu, 
   Award, 
-  BookOpen, 
   Send,
   ChevronRight,
   Terminal,
@@ -24,12 +23,11 @@ import {
   AlertCircle,
   Loader2
 } from 'lucide-react';
-import { PROJECTS, SKILLS, EDUCATION, ACHIEVEMENTS } from './constants';
+import { PROJECTS, SKILLS, EDUCATION, ACHIEVEMENTS, WORK_EXPERIENCE } from './constants';
 import { ContactFormData } from './types';
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
-  const [activeSection, setActiveSection] = useState('home');
   
   // Form state
   const [formData, setFormData] = useState<ContactFormData>({
@@ -113,7 +111,7 @@ export default function App() {
           </motion.div>
           
           <div className="hidden md:flex items-center gap-8">
-            {['Home', 'About', 'Skills', 'Projects', 'Achievements', 'Contact'].map((item) => (
+            {['Home', 'About', 'Experience', 'Skills', 'Projects', 'Achievements', 'Contact'].map((item) => (
               <a 
                 key={item} 
                 href={`#${item.toLowerCase()}`}
@@ -154,7 +152,7 @@ export default function App() {
                 View Projects <ChevronRight size={18} />
               </a>
               <a 
-                href="/Resume.pdf" 
+                href="/resume.pdf"
                 download="Venkata-Bharath-Resume.pdf"
                 className="btn-secondary flex items-center gap-2"
               >
@@ -176,7 +174,7 @@ export default function App() {
           >
             <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary to-secondary p-1 overflow-hidden">
               <img 
-                src="/Photo (1).png" 
+                src="https://i.ibb.co/27dTzC83/Photo-1.png" 
                 alt="Venkata Bharath Profile" 
                 className="w-full h-full object-cover rounded-[1.4rem]"
                 referrerPolicy="no-referrer"
@@ -238,11 +236,52 @@ export default function App() {
                 </motion.div>
               ))}
             </div>
-          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      {/* Skills Section */}
+    {/* Experience Section */}
+    <section id="experience" className="section-padding">
+      <div className="max-w-7xl mx-auto">
+        <div className="flex items-center gap-2 text-primary font-semibold mb-4">
+          <Briefcase size={18} />
+          <span>Work Experience</span>
+        </div>
+        <h2 className="text-3xl md:text-4xl font-bold mb-12">Professional Experience</h2>
+        
+        <div className="space-y-8">
+          {WORK_EXPERIENCE.map((exp, idx) => (
+            <motion.div 
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="card p-8"
+            >
+              <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-6">
+                <div>
+                  <h3 className="text-2xl font-bold">{exp.title}</h3>
+                  <p className="text-primary font-medium text-lg">{exp.company}</p>
+                </div>
+                <span className="px-4 py-2 bg-slate-100 dark:bg-slate-800 rounded-full text-sm font-medium text-slate-600 dark:text-slate-400 shrink-0">
+                  {exp.period}
+                </span>
+              </div>
+              <ul className="space-y-3">
+                {exp.details.map((detail, i) => (
+                  <li key={i} className="text-slate-600 dark:text-slate-400 flex items-start gap-3">
+                    <div className="mt-2 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                    {detail}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Skills Section */}
       <section id="skills" className="section-padding">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center gap-2 text-primary font-semibold mb-4">
@@ -545,7 +584,7 @@ export default function App() {
       <footer className="py-12 px-6 border-t border-slate-200 dark:border-slate-800">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-slate-500 text-sm">
-            © 2026 Venkata Bharath. Built with React &amp; Tailwind CSS.
+            © 2026 Venkata Bharath. All rights reserved.
           </div>
           <div className="flex items-center gap-6">
             <a href="https://github.com/DVBharath2005" className="text-slate-400 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer"><Github size={20} /></a>

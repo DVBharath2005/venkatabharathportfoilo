@@ -29,16 +29,13 @@
     @apply bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-medium transition-all duration-200 flex items-center gap-2 shadow-lg hover:shadow-xl;
   }
   
+  .btn-secondary {
+    @apply bg-slate-100 dark:bg-slate-800 text-slate-900 dark:text-slate-100 hover:bg-slate-200 dark:hover:bg-slate-700 px-6 py-3 rounded-full font-medium transition-all duration-200 flex items-center gap-2;
+  }
+
   .btn-outline {
     @apply border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 px-6 py-3 rounded-full font-medium transition-all duration-200 flex items-center gap-2;
   }
 }
 
-@layer utilities {
-  .line-clamp-2 {
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-}
+

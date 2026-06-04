@@ -26,15 +26,10 @@ export const PROJECTS: Project[] = [
     'Figma API'
   ],
   githubUrl: 'https://github.com/bharath-collab-platform',
-  liveUrl: '',
   image: '/projects/collab-workspace.png',
   details: [
     'Engineered a production-grade collaborative platform with real-time document editing and live user presence',
-    'Implemented WebSocket infrastructure using Socket.io for real-time synchronization and conflict resolution',
-    'Built role-based access control (RBAC), audit logging, version history, and point-in-time recovery features',
-    'Optimized performance using Redis caching, database indexing, and lazy loading, achieving sub-100ms update latency',
-    'Deployed applications on Kubernetes with auto-scaling and integrated Sentry for error monitoring'
-  ]
+    'Implemented WebSocket infrastructure using Socket.io for real-time synchronization and conflict resolution']
 },
 {
   id: '3',
@@ -60,15 +55,9 @@ export const PROJECTS: Project[] = [
     'Developed a full-featured e-commerce platform supporting thousands of users with high availability',
     'Integrated secure payment processing using Stripe and automated billing workflows',
     'Built an AI recommendation engine using collaborative filtering to improve product discovery',
-    'Implemented real-time inventory management with stock alerts and multi-warehouse synchronization',
-    'Optimized database performance through advanced indexing and query tuning',
-    'Integrated Elasticsearch for lightning-fast product search, filtering, and faceted navigation',
-    'Containerized services with Docker and deployed scalable infrastructure on AWS'
-  ]
+    ]
 }
-
 ];
-
 export const SKILLS: Skill[] = [
   { name: 'React', level: 70, category: 'Technical' },
   { name: 'PowerBI', level: 85, category: 'Technical' },

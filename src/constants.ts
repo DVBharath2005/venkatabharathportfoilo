@@ -10,6 +10,62 @@ export const PROJECTS: Project[] = [
     liveUrl: 'https://nexen-t3cu.onrender.com/',
     image: 'https://i.ibb.co/gZw8X5Y9/nexen-connecting-founders.png'
   }
+  {
+  id: '2',
+  title: 'Real-Time Collaborative Workspace Platform',
+  description: 'A production-grade collaborative workspace platform featuring real-time document editing, live presence awareness, communication tools, RBAC, version history, and audit logging.',
+  techStack: [
+    'React.js',
+    'Node.js',
+    'Express',
+    'Socket.io',
+    'PostgreSQL',
+    'Redis',
+    'JWT',
+    'Kubernetes',
+    'Figma API'
+  ],
+  githubUrl: 'https://github.com/bharath-collab-platform',
+  liveUrl: '',
+  image: '/projects/collab-workspace.png',
+  details: [
+    'Engineered a production-grade collaborative platform with real-time document editing and live user presence',
+    'Implemented WebSocket infrastructure using Socket.io for real-time synchronization and conflict resolution',
+    'Built role-based access control (RBAC), audit logging, version history, and point-in-time recovery features',
+    'Optimized performance using Redis caching, database indexing, and lazy loading, achieving sub-100ms update latency',
+    'Deployed applications on Kubernetes with auto-scaling and integrated Sentry for error monitoring'
+  ]
+},
+{
+  id: '3',
+  title: 'E-Commerce Platform with AI Recommendations',
+  description: 'A scalable e-commerce platform featuring AI-powered product recommendations, secure payments, inventory management, and advanced search capabilities.',
+  techStack: [
+    'React.js',
+    'Next.js',
+    'Node.js',
+    'Express',
+    'MongoDB',
+    'PostgreSQL',
+    'Stripe API',
+    'TensorFlow',
+    'Elasticsearch',
+    'Docker',
+    'AWS'
+  ],
+  githubUrl: 'https://github.com/bharath-ecommerce-ai',
+  liveUrl: '',
+  image: '/projects/ecommerce-ai.png',
+  details: [
+    'Developed a full-featured e-commerce platform supporting thousands of users with high availability',
+    'Integrated secure payment processing using Stripe and automated billing workflows',
+    'Built an AI recommendation engine using collaborative filtering to improve product discovery',
+    'Implemented real-time inventory management with stock alerts and multi-warehouse synchronization',
+    'Optimized database performance through advanced indexing and query tuning',
+    'Integrated Elasticsearch for lightning-fast product search, filtering, and faceted navigation',
+    'Containerized services with Docker and deployed scalable infrastructure on AWS'
+  ]
+}
 
 ];
 
@@ -76,13 +132,26 @@ export const ACHIEVEMENTS: Achievement[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    title: 'Data Science Intern',
-    company: 'Zhagaram Technologies',
-    period: 'July 2025 – August 2025',
-    details: [
-      'Performed data cleaning, preprocessing, and feature engineering on large datasets using Python (Pandas, NumPy) and SQL',
-      'Conducted exploratory data analysis (EDA) to identify trends, correlations, and actionable insights'
-    ]
-  }
-];
-
+  title: 'Web Development Intern',
+  company: 'MotionCut',
+  period: 'March 2024 – April 2024',
+  details: [
+    'Developed responsive, mobile-first web pages using HTML5, CSS3, and vanilla JavaScript following modern ES6+ standards',
+    'Optimized user interfaces and website performance by implementing best practices for faster loading times and cross-browser compatibility',
+    'Utilized Git for version control and collaborated with team members using agile workflows for efficient code management',
+    'Troubleshot and resolved cross-browser compatibility issues to ensure a consistent user experience across devices and browsers'
+  ]
+}
+  {
+  title: 'Data Science Intern',
+  company: 'Zhagaram Technologies',
+  period: 'July 2025 – August 2025',
+  details: [
+    'Performed data cleaning, preprocessing, and feature engineering on large datasets using Python (Pandas, NumPy) and SQL',
+    'Conducted exploratory data analysis (EDA) to identify trends, correlations, and actionable insights',
+    'Built and evaluated machine learning models for predictive analytics using Scikit-learn',
+    'Created data visualizations and interactive dashboards using Matplotlib, Seaborn, and Power BI to communicate findings',
+    'Optimized SQL queries to improve data retrieval efficiency and support reporting requirements',
+    'Automated data processing workflows using Python scripts, reducing manual effort and improving accuracy',
+  ]
+}

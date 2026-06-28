@@ -14,30 +14,6 @@ export const PROJECTS: Project[] = [
 
   {
     id: '2',
-    title: 'Real-Time Collaborative Workspace Platform',
-    description:
-      'A production-grade collaborative workspace platform featuring real-time document editing, live presence awareness, communication tools, RBAC, version history, and audit logging.',
-    techStack: [
-      'React.js',
-      'Node.js',
-      'Express',
-      'Socket.io',
-      'PostgreSQL',
-      'Redis',
-      'JWT',
-      'Kubernetes',
-      'Figma API'
-    ],
-    githubUrl: 'https://github.com/bharath-collab-platform',
-    image: '/projects/collab-workspace.png',
-    details: [
-      'Engineered a production-grade collaborative platform with real-time document editing and live user presence',
-      'Implemented WebSocket infrastructure using Socket.io for real-time synchronization and conflict resolution'
-    ]
-  },
-
-  {
-    id: '3',
     title: 'E-Commerce Platform with AI Recommendations',
     description:
       'A scalable e-commerce platform featuring AI-powered product recommendations, secure payments, inventory management, and advanced search capabilities.',

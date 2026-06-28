@@ -3,61 +3,68 @@ import { Project, Skill, Education, Achievement, WorkExperience } from './types'
 export const PROJECTS: Project[] = [
   {
     id: '1',
-    title: 'Nexen : A platform for startup Founders & Tech Enthusiasts ',
-    description: 'Nexen is a dynamic platform connecting startup founders and tech enthusiasts, fostering innovation, collaboration, and growth.',
-    techStack: ['React','NodeJs(Express)', 'MongoDB', 'JWT'],
+    title: 'Nexen: A platform for Startup Founders & Tech Enthusiasts',
+    description:
+      'Nexen is a dynamic platform connecting startup founders and tech enthusiasts, fostering innovation, collaboration, and growth.',
+    techStack: ['React', 'Node.js (Express)', 'MongoDB', 'JWT'],
     githubUrl: 'https://github.com/DVBharath2005/nexen.git',
     liveUrl: 'https://nexen-t3cu.onrender.com/',
     image: 'https://i.ibb.co/gZw8X5Y9/nexen-connecting-founders.png'
-  }
+  },
+
   {
-  id: '2',
-  title: 'Real-Time Collaborative Workspace Platform',
-  description: 'A production-grade collaborative workspace platform featuring real-time document editing, live presence awareness, communication tools, RBAC, version history, and audit logging.',
-  techStack: [
-    'React.js',
-    'Node.js',
-    'Express',
-    'Socket.io',
-    'PostgreSQL',
-    'Redis',
-    'JWT',
-    'Kubernetes',
-    'Figma API'
-  ],
-  githubUrl: 'https://github.com/bharath-collab-platform',
-  image: '/projects/collab-workspace.png',
-  details: [
-    'Engineered a production-grade collaborative platform with real-time document editing and live user presence',
-    'Implemented WebSocket infrastructure using Socket.io for real-time synchronization and conflict resolution']
-},
-{
-  id: '3',
-  title: 'E-Commerce Platform with AI Recommendations',
-  description: 'A scalable e-commerce platform featuring AI-powered product recommendations, secure payments, inventory management, and advanced search capabilities.',
-  techStack: [
-    'React.js',
-    'Next.js',
-    'Node.js',
-    'Express',
-    'MongoDB',
-    'PostgreSQL',
-    'Stripe API',
-    'TensorFlow',
-    'Elasticsearch',
-    'Docker',
-    'AWS'
-  ],
-  githubUrl: 'https://github.com/bharath-ecommerce-ai',
-  liveUrl: '',
-  image: '/projects/ecommerce-ai.png',
-  details: [
-    'Developed a full-featured e-commerce platform supporting thousands of users with high availability',
-    'Integrated secure payment processing using Stripe and automated billing workflows',
-    'Built an AI recommendation engine using collaborative filtering to improve product discovery',
+    id: '2',
+    title: 'Real-Time Collaborative Workspace Platform',
+    description:
+      'A production-grade collaborative workspace platform featuring real-time document editing, live presence awareness, communication tools, RBAC, version history, and audit logging.',
+    techStack: [
+      'React.js',
+      'Node.js',
+      'Express',
+      'Socket.io',
+      'PostgreSQL',
+      'Redis',
+      'JWT',
+      'Kubernetes',
+      'Figma API'
+    ],
+    githubUrl: 'https://github.com/bharath-collab-platform',
+    image: '/projects/collab-workspace.png',
+    details: [
+      'Engineered a production-grade collaborative platform with real-time document editing and live user presence',
+      'Implemented WebSocket infrastructure using Socket.io for real-time synchronization and conflict resolution'
     ]
-}
+  },
+
+  {
+    id: '3',
+    title: 'E-Commerce Platform with AI Recommendations',
+    description:
+      'A scalable e-commerce platform featuring AI-powered product recommendations, secure payments, inventory management, and advanced search capabilities.',
+    techStack: [
+      'React.js',
+      'Next.js',
+      'Node.js',
+      'Express',
+      'MongoDB',
+      'PostgreSQL',
+      'Stripe API',
+      'TensorFlow',
+      'Elasticsearch',
+      'Docker',
+      'AWS'
+    ],
+    githubUrl: 'https://github.com/bharath-ecommerce-ai',
+    image: '/projects/ecommerce-ai.png',
+    details: [
+      'Developed a full-featured e-commerce platform supporting thousands of users with high availability',
+      'Integrated secure payment processing using Stripe and automated billing workflows',
+      'Built an AI recommendation engine using collaborative filtering to improve product discovery'
+    ]
+  }
 ];
+
+
 export const SKILLS: Skill[] = [
   { name: 'React', level: 70, category: 'Technical' },
   { name: 'PowerBI', level: 85, category: 'Technical' },
@@ -65,30 +72,35 @@ export const SKILLS: Skill[] = [
   { name: 'Java', level: 75, category: 'Technical' },
   { name: 'Python', level: 70, category: 'Technical' },
   { name: 'Node.js', level: 75, category: 'Technical' },
+
   { name: 'Communication', level: 90, category: 'Soft' },
   { name: 'Problem Solving', level: 95, category: 'Soft' },
-  { name: 'Public speaking', level: 65, category: 'Soft' },
+  { name: 'Public Speaking', level: 65, category: 'Soft' },
   { name: 'Teamwork', level: 85, category: 'Soft' },
+
   { name: 'Git/GitHub', level: 90, category: 'Tools' },
   { name: 'VS Code', level: 95, category: 'Tools' },
   { name: 'Figma', level: 70, category: 'Tools' }
 ];
 
+
 export const EDUCATION: Education[] = [
   {
     institution: 'Parul University',
-    degree: 'B-Tech CSE(BDA)',
+    degree: 'B-Tech CSE (BDA)',
     period: '2023-2027',
     gpa: '7.96/10',
     details: ['Current SGPA: 7.96']
   },
+
   {
     institution: "Rao's Junior College, Nandyal",
     degree: 'Intermediate (MPC), Board of Intermediate Education',
     period: '2021-2023',
     gpa: '83.5%',
     details: []
-  }, 
+  },
+
   {
     institution: 'Sri Guru Raja English Medium High School, Nandyal',
     degree: 'SSC, Board of Secondary Education',
@@ -98,49 +110,58 @@ export const EDUCATION: Education[] = [
   }
 ];
 
+
 export const ACHIEVEMENTS: Achievement[] = [
   {
-    title: 'Mastering Power BI Report Design- Beginner to Advanced',
+    title: 'Mastering Power BI Report Design - Beginner to Advanced',
     issuer: 'Udemy',
     date: 'Mar 2026',
-    description: 'Comprehensive guide to Power BI report design, covering fundamentals to advanced techniques for impactful dashboards'
+    description:
+      'Comprehensive guide to Power BI report design, covering fundamentals to advanced techniques for impactful dashboards'
   },
+
   {
     title: 'Python Programming',
     issuer: 'HackerRank',
     date: 'Jan 2025',
-    description: 'Demonstrated proficiency in Python programming through solving various coding challenges and exercises on HackerRank.'
+    description:
+      'Demonstrated proficiency in Python programming through solving coding challenges and exercises on HackerRank.'
   },
+
   {
-    title: 'Tata Group- Cybersecurity Analyst Job Simulation',
+    title: 'Tata Group - Cybersecurity Analyst Job Simulation',
     issuer: 'Forage',
     date: 'Feb 2025',
-    description: 'Completed a job simulation program focused on cybersecurity analysis, gaining practical experience in identifying and mitigating cyber threats.'
+    description:
+      'Completed a cybersecurity analyst simulation program focused on identifying and mitigating cyber threats.'
   }
 ];
 
+
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-  title: 'Web Development Intern',
-  company: 'MotionCut',
-  period: 'March 2024 – April 2024',
-  details: [
-    'Developed responsive, mobile-first web pages using HTML5, CSS3, and vanilla JavaScript following modern ES6+ standards',
-    'Optimized user interfaces and website performance by implementing best practices for faster loading times and cross-browser compatibility',
-    'Utilized Git for version control and collaborated with team members using agile workflows for efficient code management',
-    'Troubleshot and resolved cross-browser compatibility issues to ensure a consistent user experience across devices and browsers'
-  ]
-}
+    title: 'Web Development Intern',
+    company: 'MotionCut',
+    period: 'March 2024 – April 2024',
+    details: [
+      'Developed responsive, mobile-first web pages using HTML5, CSS3, and JavaScript following modern ES6+ standards',
+      'Optimized UI performance and implemented best practices for faster loading times and cross-browser compatibility',
+      'Used Git for version control and collaborated with team members using agile workflows',
+      'Resolved cross-browser compatibility issues to ensure consistent user experience across devices'
+    ]
+  },
+
   {
-  title: 'Data Science Intern',
-  company: 'Zhagaram Technologies',
-  period: 'July 2025 – August 2025',
-  details: [
-    'Performed data cleaning, preprocessing, and feature engineering on large datasets using Python (Pandas, NumPy) and SQL',
-    'Conducted exploratory data analysis (EDA) to identify trends, correlations, and actionable insights',
-    'Built and evaluated machine learning models for predictive analytics using Scikit-learn',
-    'Created data visualizations and interactive dashboards using Matplotlib, Seaborn, and Power BI to communicate findings',
-    'Optimized SQL queries to improve data retrieval efficiency and support reporting requirements',
-    'Automated data processing workflows using Python scripts, reducing manual effort and improving accuracy',
-  ]
-}
+    title: 'Data Science Intern',
+    company: 'Zhagaram Technologies',
+    period: 'July 2025 – August 2025',
+    details: [
+      'Performed data cleaning, preprocessing, and feature engineering using Python (Pandas, NumPy) and SQL',
+      'Conducted exploratory data analysis (EDA) to identify trends, correlations, and business insights',
+      'Built and evaluated machine learning models using Scikit-learn for predictive analytics',
+      'Created visualizations and dashboards using Matplotlib, Seaborn, and Power BI',
+      'Optimized SQL queries to improve data retrieval efficiency',
+      'Automated data processing workflows using Python scripts to reduce manual effort'
+    ]
+  }
+];

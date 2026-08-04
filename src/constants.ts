@@ -31,7 +31,7 @@ export const PROJECTS: Project[] = [
       'AWS'
     ],
     githubUrl: 'https://github.com/bharath-ecommerce-ai',
-    image: 'https://kommodo.ai/i/fypuOMe4fC6hIOdWcJoD',
+    image: 'https://res.cloudinary.com/dtz0urit6/image/upload/q_auto:best,f_jpg/cloudinary-tools-uploads/h7lq60hr2ngfb8qhw3nq',
     details: [
       'Developed a full-featured e-commerce platform supporting thousands of users with high availability',
       'Integrated secure payment processing using Stripe and automated billing workflows',

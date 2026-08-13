@@ -56,7 +56,8 @@ export const SKILLS: Skill[] = [
 
   { name: 'Git/GitHub', level: 90, category: 'Tools' },
   { name: 'VS Code', level: 95, category: 'Tools' },
-  { name: 'Figma', level: 70, category: 'Tools' }
+  { name: 'Figma', level: 70, category: 'Tools' },
+   { name: 'Android Studio', level: 75, category: 'Tools' }
 ];
 
 

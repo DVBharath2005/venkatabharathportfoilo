@@ -30,7 +30,7 @@ export const PROJECTS: Project[] = [
       'Docker',
       'AWS'
     ],
-    githubUrl: 'https://github.com/bharath-ecommerce-ai',
+    githubUrl: 'https://github.com/DVBharath2005/E-commerce-AI.git',
     image: 'https://i.ibb.co/9k4Dx1qL/Gemini-Generated-Image-ue4t4bue4t4bue4t.png',
     details: [
       'Developed a full-featured e-commerce platform supporting thousands of users with high availability',

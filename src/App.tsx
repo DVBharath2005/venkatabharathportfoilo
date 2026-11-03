@@ -174,7 +174,7 @@ export default function App() {
           >
             <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary to-secondary p-1 overflow-hidden">
               <img 
-                src="https://i.ibb.co/27dTzC83/Photo-1.png" 
+                src="https://i.postimg.cc/KYXGgWzg/photo.jpg" 
                 alt="Venkata Bharath Profile" 
                 className="w-full h-full object-cover rounded-[1.4rem]"
                 referrerPolicy="no-referrer"
